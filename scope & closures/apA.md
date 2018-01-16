@@ -32,7 +32,7 @@ So, if JavaScript had dynamic scope, when `foo()` is executed, **theoretically**
 
 ```js
 function foo() {
-	console.log( a ); // 3  (not 2!)
+	console.log( this.a ); // 3  (not 2!)
 }
 
 function bar() {
